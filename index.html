@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Direitos Humanos — Samarco</title>
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="curso">
+
+<div id="viewport">
+  <div id="palco">
+
+    <!-- Conteúdo da tela atual -->
+    <main id="tela"></main>
+
+    <!-- Barra inferior -->
+    <nav id="barra" aria-label="Barra do curso">
+      <button id="btnCasa" class="ic ativo" type="button" title="Ir para o menu" aria-label="Ir para o menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10.5V20h13v-9.5"/><path d="M10 20v-5h4v5"/></svg>
+      </button>
+      <button id="btnIndice" class="ic ativo" type="button" title="Índice de telas" aria-label="Abrir o índice de telas">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><g fill="currentColor" stroke="none"><circle cx="5" cy="5" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="12" cy="19" r="2"/><circle cx="19" cy="19" r="2"/></g></svg>
+      </button>
+      <span id="contador" class="contador">01 / 12</span>
+
+      <img class="logo" src="assets/img/samarco-logo.png" alt="Samarco">
+
+      <button id="btnAjuda" class="ic ativo ajuda" type="button" title="Ajuda" aria-label="Abrir a ajuda" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.2 9.3a2.9 2.9 0 1 1 4.3 2.5c-.9.5-1.5 1.1-1.5 2.2"/><circle cx="12" cy="17.2" r=".6" fill="currentColor"/></svg>
+      </button>
+      <button id="btnSair" class="ic ativo" type="button" title="Sair do curso" aria-label="Sair do curso">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+      </button>
+    </nav>
+
+    <!-- Atalho do índice (aparece só na versão de revisão, em todas as telas) -->
+    <button id="btnIndiceRev" type="button">☰ Índice</button>
+
+    <!-- Aviso rápido (ex.: módulo em desenvolvimento) -->
+    <div id="aviso" role="status"></div>
+
+    <!-- Painel de índice (modo revisão) -->
+    <aside id="indice" aria-label="Índice de telas" aria-hidden="true"></aside>
+
+    <!-- Janela de ajuda (botão "?" da barra) -->
+    <div id="ajuda" role="dialog" aria-modal="true" aria-labelledby="ajudaTitulo" aria-hidden="true">
+      <div class="ajuda-caixa">
+        <h2 id="ajudaTitulo">Como navegar neste curso</h2>
+        <ul>
+          <li><strong>Voltar e avançar:</strong> <span class="so-celular">toque nas</span><span class="so-desktop">use as</span> setas redondas nas laterais da tela<span class="so-desktop"> ou as teclas ← e → do teclado</span>. O avanço só é liberado depois que você conclui a atividade da tela.</li>
+          <li><strong>Menu (casinha):</strong> leva você de volta ao menu de módulos.</li>
+          <li><strong>Índice (pontinhos):</strong> mostra todas as telas do curso e quais você já concluiu.</li>
+          <li><strong>Contador:</strong> indica em qual tela do módulo você está.</li>
+          <li><strong>Vídeos e podcasts:</strong> <span class="so-celular">toque no</span><span class="so-desktop">use o</span> botão de play. Alguns conteúdos precisam ser assistidos até o fim para liberar o avanço.</li>
+          <li><strong>Sair (X):</strong> fecha o curso. Seu progresso é salvo automaticamente e você continua de onde parou.</li>
+          <li class="so-desktop"><strong>Esc:</strong> fecha janelas abertas, como esta.</li>
+        </ul>
+        <button type="button" class="ajuda-fechar">Fechar</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Botões de navegação: ficam nos cantos da janela (fora do palco), não nas bordas do desenho -->
+  <button id="btnVoltar" class="nav voltar" type="button" aria-label="Voltar"></button>
+  <button id="btnAvancar" class="nav avancar" type="button" aria-label="Avançar"></button>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/telas.js"></script>
+<script src="js/scorm.js"></script>
+<script src="js/convite.js"></script>
+<script src="js/curso.js"></script>
+<!-- Telas prontas (as demais aparecem como "tela em construção") -->
+<script src="js/telas/a01.js"></script>
+<script src="js/telas/a02.js"></script>
+<script src="js/telas/a03.js"></script>
+<script src="js/telas/m1-01.js"></script>
+<script src="js/telas/m1-02.js"></script>
+<script src="js/telas/m1-03.js"></script>
+<script src="js/telas/m1-04.js"></script>
+<script src="js/telas/m1-05.js"></script>
+<script src="js/telas/m1-06.js"></script>
+<script src="js/telas/m1-07.js"></script>
+<script src="js/telas/m1-08.js"></script>
+<script src="js/telas/m1-09.js"></script>
+<script src="js/telas/m2-comum.js"></script>
+<script src="js/telas/m2-01.js"></script>
+<script src="js/telas/m2-02.js"></script>
+<script src="js/telas/m2-video.js"></script>
+<script src="js/telas/m2-quiz.js"></script>
+<script src="js/telas/m2-05.js"></script>
+<script src="js/telas/m2-06.js"></script>
+<script src="js/telas/m2-09.js"></script>
+<script src="js/telas/m2-12.js"></script>
+<script src="js/telas/m2-canais.js"></script>
+</body>
+</html>
